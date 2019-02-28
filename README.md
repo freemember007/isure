@@ -11,10 +11,24 @@ yarn add isure
 1. 基本使用示例：
 
 ```javascript
-isure(req.query.hos_id, '医院ID不能为空')
-isure((foo > bar), 'foo必须大于bar')
-isure(foo.toString().match(/.../), 'foo格式不匹配') 
-isure((typeof foo === 'number'), '函数bar的参数foo的类型必须为数字', 500) //服务端可传stateCode
+/**
+ * 登录接口
+ */
+const isure = require('isure')
+module.exports = async (req) => {
+  isure(req.query.hos_id, '医院ID不能为空')
+  isure(req.query.dept_id, '科室不能为空')
+  isure(req.query.pat_id, '患者ID不能为空')
+
+  function someAweSomeFunction (foo, bar) {
+    isure((typeof foo === 'number'), 'foo必须为数字', 500) //服务端可传stateCode
+    isure((foo > bar), 'foo必须大于bar', 500)
+    // .... some logic
+  }
+  someAweSomeFunction(1, 2)
+
+  return { user: {} }
+}
 ```
 
 2. 服务端错误捕获与处理建议：

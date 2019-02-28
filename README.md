@@ -38,7 +38,7 @@ try {
 
 3. 客户端错误捕获与处理建议：
 
-```
+```javascript
  window.onerror = (err) => {
    alert(err.message) // or use yourself's awesome toast UI
  }

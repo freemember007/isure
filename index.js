@@ -29,10 +29,10 @@
 //      alert(err.message) // or use yourself's awesome toast UI
 //    }
  
-function isure (assertion, message, statusCode) {
+function isure (condition, message, statusCode) {
   const err = { message: message || '验证错误' }
   typeof global != undefined && (err.statusCode = statusCode || 400)
-  if(!assertion) throw err
+  if(!condition) throw err
 }
 
 module.exports = isure

@@ -1,0 +1,23 @@
+{
+  "name": "isure",
+  "version": "0.0.1",
+  "description": "JS将中文转化为拼音首字母字符串的小插件",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/freemember007/isure.git"
+  },
+  "keywords": [
+    "chinese",
+    "pinyin"
+  ],
+  "author": "Alfred",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/freemember007/isure/issues"
+  },
+  "homepage": "https://github.com/freemember007/isure#readme"
+}

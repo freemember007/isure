@@ -3,7 +3,9 @@
 极简断言/验证库，兼容浏览器与Node端，Gzip后仅0kb！
 
 ```bash
-npm install isure / yarn isure
+npm install isure
+// or
+yarn add isure
 ```
 
 1. 基本使用示例：

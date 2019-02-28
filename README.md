@@ -4,7 +4,7 @@
 
 ```bash
 npm install isure
-// or
+# or
 yarn add isure
 ```
 

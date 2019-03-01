@@ -21,8 +21,8 @@ module.exports = async (req) => {
   isure(req.query.pat_id, '患者ID不能为空')
 
   function yourSomeAwesomeFunc (foo, bar) {
-    isure((typeof foo === 'number'), 'foo必须为数字', 500) //服务端可传stateCode
-    isure((foo > bar), 'foo必须大于bar', 500)
+    isure(typeof foo === 'number', 'foo必须为数字', 500) //服务端可传stateCode
+    isure(foo > bar, 'foo必须大于bar', 500)
     // .... some logic
   }
   yourSomeAwesomeFunc(1, 2)

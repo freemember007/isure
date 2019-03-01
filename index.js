@@ -4,9 +4,9 @@
 
 //   1. 基本使用示例：
 //   isure(req.query.hos_id, '医院ID不能为空')
-//   isure((foo > bar), 'foo必须大于bar')
+//   isure(foo > bar, 'foo必须大于bar')
 //   isure(foo.toString().match(/.../), 'foo格式不匹配') 
-//   isure((typeof foo === 'number'), '函数bar的参数foo的类型必须为数字', 500) //服务端可传stateCode
+//   isure(typeof foo === 'number', '函数bar的参数foo的类型必须为数字', 500) //服务端可传stateCode
 //   
 //   2. 服务端错误捕获与处理建议：
 //   try {

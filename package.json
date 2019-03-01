@@ -1,6 +1,6 @@
 {
   "name": "isure",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "极简断言/验证库，兼容浏览器与Node端，Gzip后仅0kb！",
   "main": "index.js",
   "scripts": {
